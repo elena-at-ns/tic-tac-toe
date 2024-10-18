@@ -1,2 +1,28 @@
-<div></div>
+<div>
+  <h1>Tic tac toe</h1>
+
+  <button (click)="startGame()">Start Game</button>
+
+  <div>
+    <div>player 1</div>
+    <div class="game-board">
+      <div class="row">
+        <div (click)="clickField($event)" position="0" class="field"></div>
+        <div (click)="clickField($event)" position="1" class="field"></div>
+        <div (click)="clickField($event)" position="2" class="field"></div>
+      </div>
+      <div class="row">
+        <div (click)="clickField($event)" position="3" class="field"></div>
+        <div (click)="clickField($event)" position="4" class="field"></div>
+        <div (click)="clickField($event)" position="5" class="field"></div>
+      </div>
+      <div class="row">
+        <div (click)="clickField($event)" position="6" class="field"></div>
+        <div (click)="clickField($event)" position="7" class="field"></div>
+        <div (click)="clickField($event)" position="8" class="field"></div>
+      </div>
+    </div>
+    <div>player 2</div>
+  </div>
+</div>
 <router-outlet></router-outlet>
