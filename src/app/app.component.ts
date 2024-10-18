@@ -22,6 +22,11 @@ export class AppComponent implements OnInit {
 
   clickField(field: any): any {
     const position = field.currentTarget.getAttribute("position");
-    console.log(position);
+    this.game.setField(position, this.game.currentPlayer);
+
+    const color = this.game.getPlayerColor();
+    field.currentTarget.classList.add(color);
+
+    this.game.changePlayer();
   }
 }

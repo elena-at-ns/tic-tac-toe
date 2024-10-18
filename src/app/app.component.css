@@ -10,3 +10,11 @@
   height: 100px;
   border: 1px solid black;
 }
+
+.player-one {
+  background-color: pink;
+}
+
+.player-two {
+  background-color: aliceblue;
+}

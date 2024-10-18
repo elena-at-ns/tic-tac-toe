@@ -4,7 +4,7 @@
   <button (click)="startGame()">Start Game</button>
 
   <div>
-    <div>player 1</div>
+    <div class="player-one">player 1</div>
     <div class="game-board">
       <div class="row">
         <div (click)="clickField($event)" position="0" class="field"></div>
@@ -22,7 +22,7 @@
         <div (click)="clickField($event)" position="8" class="field"></div>
       </div>
     </div>
-    <div>player 2</div>
+    <div class="player-two">player 2</div>
   </div>
 </div>
 <router-outlet></router-outlet>
